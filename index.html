@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>🎱 Magic 8-Ball</title>
+  <title>Magic 8-Ball</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="magicBall" class="magic-ball">
-    <div id="answer" class="answer">Ask a question...</div>
-  </div>
-  <p class="instruction">Click the Magic 8-Ball to reveal your destiny.</p>
+  <div class="background-aura" aria-hidden="true"></div>
+
+  <main class="stage">
+    <div id="magicBall" class="magic-ball" aria-label="Magic 8-Ball">
+      <div id="answer" class="answer">Ask your question...</div>
+      <div class="shine" aria-hidden="true"></div>
+    </div>
+
+    <p class="instruction">Focus your thoughts and tap the 8-Ball.</p>
+  </main>
+
+  <div class="stars" aria-hidden="true"></div>
   <script src="script.js"></script>
 </body>
 </html>
